@@ -1,5 +1,4 @@
 import HeroImage from '../assets/img/hero_image.png'
-import FlatAbstract from '../assets/img/flat_Abstract.png'
 
 export const Hero = () => {
     return (
@@ -27,12 +26,12 @@ export const Hero = () => {
                 </a>
                 </div>
 
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
-          </div>
-        </div>
+                <div className="grid grid-flow-row gap-4 ">
+                  <div className="bg-blue-500 p-4 rounded shadow-md md:col-span-1">Card 1</div>
+                  <div className="bg-green-500 p-4 rounded shadow-md md:col-span-1">Card 2</div>
+                  <div className="bg-red-500 p-4 rounded shadow-md md:col-span-2">Card 3</div>
+                 </div>
+                 </div>
         <div className=" inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute  xl:px-0">
           
           <img
@@ -40,6 +39,7 @@ export const Hero = () => {
             src={HeroImage}
             alt=""
           />
+        </div>
         </div>
       </div>
     );

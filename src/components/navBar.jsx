@@ -17,7 +17,7 @@ export const NavBar = () => {
             <ul className="flex text-[14px] lg:text[18px] items-center hidden space-x-5 sm:flex lg:flex text-AbsoluteWhite font-Font list-none ">
               <li>
                 <a
-                  
+                  href="/home"
                   className="font-medium tracking-wide transition-colors duration-200 hover:bg-gray08 cursor-pointer p-3 rounded-md "
                 >
                   Home

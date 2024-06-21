@@ -7,6 +7,7 @@ function App() {
   return (
     <div className='bg-gray08'>
       <NavBar />
+      <Home />
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
