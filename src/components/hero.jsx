@@ -2,40 +2,50 @@ import HeroImage from '../assets/img/hero_image.png'
 
 export const Hero = () => {
     return (
-      <div className="relative flex flex-col-reverse py-16 lg:flex-col ">
+      <div className="  py-8 lg:py-16  ">
         
-        <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-          <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5 ">
+        <div className=" flex flex-col-reverse md:flex-row lg:flex-row w-full px-16 items-center justify-center">
+          <div className=" w-full lg:w-[50%] ">
             
-                <h2 className="mb-5 font-Font text-3xl font-bold tracking-tight text-AbsoluteWhite sm:text-4xl sm:leading-none text-center  lg:text-left ">
+                <h2 className="mb-5 font-Font text-3xl font-bold tracking-tight text-AbsoluteWhite sm:text-4xl sm:leading-none  ">
                 Discover Your Dream Property with Estatein
                 </h2>
-                <p className="pr-5 mb-5 font-Font text-base text-gray60 md:text-lg text-center  lg:text-left">
+                <p className="pr-5 mb-5 font-Font text-base text-gray60 md:text-lg">
                 Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.
                 </p>
-                <div className="flex flex-col items-center lg:flex-row  justify-start space-y-5 space-x-5 ">
+                <div className="flex flex-col items-center lg:flex-row gap-4  justify-start ">
                 <a
-                    className="inline-flex items-center justify-center bg-gray15 h-12 px-6 font-medium tracking-wide text-AbsoluteWhite transition duration-200 rounded-md shadow-md font-Font cursor-pointer "
+                    className="inline-flex items-center justify-center bg-gray15 h-12 px-6 font-medium tracking-wide text-AbsoluteWhite transition duration-200 rounded-md  font-Font cursor-pointer w-full "
                 >
                 Learn more
                 </a>
                 <a
-                    className="inline-flex items-center bg-purple60 h-12 px-6 font-semibold text-AbsoluteWhite transition-colors duration-200  font-Font rounded-md cursor-pointer"
+                    className="inline-flex items-center justify-center bg-purple60 h-12 px-6 font-semibold text-AbsoluteWhite transition-colors duration-200  font-Font rounded-md cursor-pointer w-full"
                 >
                     Browse Properties
                 </a>
                 </div>
 
-                <div className="grid grid-flow-row gap-4 ">
-                  <div className="bg-blue-500 p-4 rounded shadow-md md:col-span-1">Card 1</div>
-                  <div className="bg-green-500 p-4 rounded shadow-md md:col-span-1">Card 2</div>
-                  <div className="bg-red-500 p-4 rounded shadow-md md:col-span-2">Card 3</div>
+                <div className=" grid grid-flow-col-3 lg:grid-flow-col sm:grid-flow-col gap-4 mt-10  ">
+                  <div className=" bg-gray10  font-Font p-4  rounded-xl flex flex-col gap items-center lg:items-start sm:items-start  ">
+                    <h2 className=' text-AbsoluteWhite'>200+</h2>
+                    <p className=' text-gray60 text-xs'>Happy Customers</p>
+                  </div>
+                  <div className="bg-gray10  font-Font p-4 rounded-xl flex flex-col gap items-center lg:items-start sm:items-start ">
+                    <h2 className=' text-AbsoluteWhite'>10k+</h2>
+                    <p className=' text-gray60 text-xs'>Properties For Clients</p>
+                  </div>
+                  <div className="bg-gray10  font-Font p-4 rounded-xl flex flex-col gap items-center lg:items-start sm:items-start  col-span-2 sm:col-span-1 lg:col-span-1  ">
+                    <h2 className=' text-AbsoluteWhite'>16+</h2>
+                    <p className=' text-gray60 text-xs'>Years Of Experience</p>
+                  </div>
+                  
                  </div>
                  </div>
-        <div className=" inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute  xl:px-0">
+        <div className=" w-[100%] lg:w-[50%] ">
           
           <img
-            className="object-cover w-[90%] lg:w-full  h-100 rounded lg:rounded-none lg:shadow-none md:h-100 lg:h-full z-0"
+            className="object-cover w-full"
             src={HeroImage}
             alt=""
           />
