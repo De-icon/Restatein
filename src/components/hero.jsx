@@ -13,18 +13,12 @@ export const Hero = () => {
                 <p className="pr-5 mb-5 font-Font text-base text-gray60 md:text-lg">
                 Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.
                 </p>
-                <div className="flex flex-col items-center lg:flex-row gap-4  justify-start ">
-                <a
-                    className="inline-flex items-center justify-center bg-gray15 h-12 px-6 font-medium tracking-wide text-AbsoluteWhite transition duration-200 rounded-md  font-Font cursor-pointer w-full "
-                >
-                Learn more
-                </a>
-                <a
-                    className="inline-flex items-center justify-center bg-purple60 h-12 px-6 font-semibold text-AbsoluteWhite transition-colors duration-200  font-Font rounded-md cursor-pointer w-full"
-                >
-                    Browse Properties
-                </a>
+                <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start font-Font">
+                  <a  className="inline-block rounded-lg bg-gray10 hover:bg-gray15  px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 focus-visible:ring active:bg-indigo-700 md:text-base ">Learn More</a>
+
+                  <a  className="inline-block rounded-lg  px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 bg-purple60 hover:bg-purple65 focus-visible:ring  active:text-gray-700 md:text-base">Browse Properties</a>
                 </div>
+                
 
                 <div className=" grid grid-flow-col-3 lg:grid-flow-col sm:grid-flow-col gap-4 mt-10  ">
                   <div className=" bg-gray10  font-Font p-4  rounded-xl flex flex-col gap items-center lg:items-start sm:items-start  ">

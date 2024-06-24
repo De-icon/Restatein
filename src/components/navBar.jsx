@@ -46,7 +46,7 @@ export const NavBar = () => {
             </ul>
                 <a
                   
-                  className=" font-Font text-[14px] lg:text[18px] sm:inline-flex lg:inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-AbsoluteWhite transition duration-200 shadow-md bg-gray08 focus:shadow-outline focus:outline-none rounded-md hidden cursor-pointer"
+                  className=" font-Font text-[14px] lg:text[18px] sm:inline-flex lg:inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-AbsoluteWhite transition duration-200 bg-purple60 hover:bg-purple65  rounded-md hidden cursor-pointer"
                   
                 >
                   Contact Us

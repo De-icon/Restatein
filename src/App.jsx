@@ -5,7 +5,7 @@ import { NavBar } from './components/navBar'
 function App() {
 
   return (
-    <div className='bg-gray08'>
+    <div>
       <NavBar />
       <Home />
       <BrowserRouter>

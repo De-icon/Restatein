@@ -4,6 +4,7 @@ import Homeimg from '../assets/img/home.png'
 import Management from '../assets/img/management.png'
 import Decision from '../assets/img/decision.png'
 import Arow from '../assets/img/icons/arow.svg'
+import { FeaturedProperties } from '../components/featuredProperties'
 
 
 
@@ -11,7 +12,7 @@ export const Home = () => {
     return (
       <>
         <Hero />
-        <div className=' shadow-gray15 shadow-2xl p-4 w-full mx-2 my-10 '>
+        <div className=' border-[16px] border-gray40 p-4 w-full mx-2 my-10 '>
           <div className='  grid grid-cols-2 w-full justify-between gap-12 gap-y-5 auto-cols-[300px] md:grid-cols-4'>
             <div className=' relative p-4 flex flex-col items-center justify-center rounded-md bg-gray10 gap-2 w-full'>
                 <img src={Arow} className=' w-6 absolute right-2 top-2' />
@@ -35,6 +36,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <FeaturedProperties />
       </>
     );
   };
