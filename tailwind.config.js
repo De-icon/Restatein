@@ -5,6 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs' : '320px',
+      'sm' : '640px',
+      'md' : '768px',
+      'lg' : '1024px',
+      'xl' : '1280px',
+      'my-brakepoint': {'min': '380px', 'max': '430px'}
+    },
     extend: {
       colors:{
         AbsoluteWhite: "#fff",

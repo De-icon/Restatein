@@ -5,7 +5,7 @@ import { FeaturedSlider } from './featuredSlider'
 
 export const FeaturedProperties = () => {
   return (
-    <div className=' max-w-full p-5 md:px-16 text-AbsoluteWhite font-Font flex flex-col gap-6'>
+    <div className=' max-w-full p-5 mb-10 md:px-16 text-AbsoluteWhite font-Font flex flex-col gap-6'>
         <img src={Star} className=' w-16' />
         <h1 className=' font-bold tracking-wide'>Featured Properties</h1>
         <div className=' w-full flex justify-between align-center gap-12' >

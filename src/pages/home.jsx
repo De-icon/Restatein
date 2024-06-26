@@ -11,6 +11,7 @@ import { FeaturedProperties } from '../components/featuredProperties'
 export const Home = () => {
     return (
       <>
+        <div className=' max-w-full mx-auto'>
         <Hero />
         <div className=' border-[16px] border-gray40 p-4 w-full mx-2 my-10 '>
           <div className='  grid grid-cols-2 w-full justify-between gap-12 gap-y-5 auto-cols-[300px] md:grid-cols-4'>
@@ -37,6 +38,8 @@ export const Home = () => {
           </div>
         </div>
         <FeaturedProperties />
+        </div>
+        
       </>
     );
   };
