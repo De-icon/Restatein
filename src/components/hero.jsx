@@ -2,9 +2,9 @@ import HeroImage from '../assets/img/hero_image.png'
 
 export const Hero = () => {
     return (
-      <div className="  py-8 lg:py-16  ">
+      <div className=" max-w-full md:px-16 px-5  py-8 lg:py-16  ">
         
-        <div className=" grid grid-flow-col md:flex-row lg:flex-row w-full px-16 items-center justify-center">
+        <div className=" grid grid-flow-col md:flex-row lg:flex-row w-full items-center justify-center">
           <div className=" w-full lg:w-[100%] ">
             
                 <h2 className="mb-5 font-Font text-3xl font-bold tracking-tight text-AbsoluteWhite sm:text-4xl sm:leading-none  ">
@@ -20,21 +20,21 @@ export const Hero = () => {
                 </div>
                 
 
-                <div className=" grid grid-flow-col-3 lg:grid-flow-col sm:grid-flow-col gap-4 mt-10  ">
-                  <div className=" bg-gray10  font-Font p-4  rounded-xl flex flex-col gap-3 items-center lg:items-start sm:items-start  ">
-                    <h2 className=' text-AbsoluteWhite'>200+</h2>
-                    <p className=' text-gray60 text-xs'>Happy Customers</p>
-                  </div>
-                  <div className="bg-gray10  font-Font p-4 rounded-xl flex flex-col gap-3 items-center lg:items-start sm:items-start ">
-                    <h2 className=' text-AbsoluteWhite'>10k+</h2>
-                    <p className=' text-gray60 text-xs'>Properties For Clients</p>
-                  </div>
-                  <div className="bg-gray10  font-Font p-4 rounded-xl flex flex-col gap-3 items-center lg:items-start sm:items-start  col-span-2 sm:col-span-1 lg:col-span-1  ">
-                    <h2 className=' text-AbsoluteWhite'>16+</h2>
-                    <p className=' text-gray60 text-xs'>Years Of Experience</p>
-                  </div>
-                  
-                 </div>
+                  <div className=" grid grid-flow-col-3 lg:grid-flow-col sm:grid-flow-col gap-4 mt-10  ">
+                      <div className=" bg-gray10  font-Font p-4  rounded-xl flex flex-col gap-3 items-center lg:items-start sm:items-start  ">
+                        <h2 className=' text-AbsoluteWhite'>200+</h2>
+                        <p className=' text-gray60 text-xs'>Happy Customers</p>
+                      </div>
+                      <div className="bg-gray10  font-Font p-4 rounded-xl flex flex-col gap-3 items-center lg:items-start sm:items-start ">
+                        <h2 className=' text-AbsoluteWhite'>10k+</h2>
+                        <p className=' text-gray60 text-xs'>Properties For Clients</p>
+                      </div>
+                      <div className="bg-gray10  font-Font p-4 rounded-xl flex flex-col gap-3 items-center lg:items-start sm:items-start  col-span-2 sm:col-span-1 lg:col-span-1  ">
+                        <h2 className=' text-AbsoluteWhite'>16+</h2>
+                        <p className=' text-gray60 text-xs'>Years Of Experience</p>
+                      </div>
+                      
+                    </div>
                  </div>
         <div className=" w-[100%] lg:w-[100%] ">
           

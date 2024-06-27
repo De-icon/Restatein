@@ -29,7 +29,7 @@ export const FeaturedSlider = () => {
   }, []);
 
   const settings = {
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -106,9 +106,9 @@ export const FeaturedSlider = () => {
           </div>
         ))}
       </Slider>
-      <div className=' absolute -bottom-16 md:hidden font-Font text-[14px] lg:text[18px] inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-AbsoluteWhite transition duration-200 bg-gray10 hover:bg-gray15  rounded-md cursor-pointer w-48'>View All Properties</div>
+      <div className=' absolute -bottom-16 md:hidden font-Font text-[14px] lg:text[18px] inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-AbsoluteWhite transition duration-200 bg-gray10 hover:bg-gray15  rounded-md cursor-pointer w-44'>View All Properties</div>
       <div className=' absolute right-12 md:left-0 -bottom-14'>
-        <p>{value} 0f {Properties.length + 1}</p>
+        <p>{value} 0f {Properties.length}</p>
       </div>
     </div>
   );
