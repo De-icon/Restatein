@@ -17,7 +17,7 @@ export const Home = () => {
         <div className=' max-w-full mx-auto'>
         <Hero2 />
         <div className=' px-4 my-10 '>
-          <div className='  grid grid-cols-2 w-full gap-12 gap-y-5  md:grid-cols-4'>
+          <div className='  grid grid-cols-2 w-full gap-10 gap-y-5  md:grid-cols-4'>
             <div className=' relative p-4 flex flex-col items-center justify-center rounded-md bg-gray10 gap-2 w-full'>
                 <img src={Arow} className=' w-6 absolute right-2 top-2' />
                 <img src={Homeimg} className=' w-14' />
