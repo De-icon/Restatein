@@ -11,7 +11,8 @@ export default {
       'md' : '768px',
       'lg' : '1024px',
       'xl' : '1280px',
-      'my-brakepoint': {'min': '380px', 'max': '430px'}
+      'my-brakepoint': {'min': '380px', 'max': '430px'},
+      'myBrakepoint': {'min': '640px', 'max': '850px'},
     },
     extend: {
       colors:{

@@ -205,3 +205,30 @@ export const FaqData = [
         comment: 'Understand the steps involved in making an offer on a property listed on Estatein.'
     }
 ]
+
+export const ClientData = [
+    {
+        id: 1,
+        year: 2019,
+        category: 'Luxury Home Development',
+        what_they_say: 'Estatein expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.'
+    },
+    {
+        id: 2,
+        year: 2020,
+        category: 'Commercial Real Estate',
+        what_they_say: 'The Estatein team provided exceptional service in securing our new retail location. Their market knowledge and negotiation skills are top-notch.'
+    },
+    {
+        id: 3,
+        year: 2021,
+        category: 'Residential Property Investment',
+        what_they_say: 'We relied on Estatein for our first property investment. Their guidance and professional approach made the process smooth and successful.'
+    },
+    {
+        id: 4,
+        year: 2022,
+        category: 'Industrial Property Acquisition',
+        what_they_say: 'Estatein helped us acquire the perfect industrial property for our manufacturing needs. Their dedication and attention to detail are unmatched.'
+    }
+];
