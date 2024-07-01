@@ -3,7 +3,8 @@ import Slider from "react-slick";
 import { NextArrow } from './nextArrow';
 import { PrevArrow } from './prevArrow';
 import { useState, useEffect } from 'react';
-import { FaStar } from "react-icons/fa";
+import { AiOutlineThunderbolt } from "react-icons/ai";
+import { BiCategoryAlt } from "react-icons/bi";
 import Star from '../assets/img/star.png'
 
 
@@ -32,7 +33,7 @@ export const ValueClient = () => {
   const settings = {
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     autoplaySpeed: 2000,
@@ -44,7 +45,7 @@ export const ValueClient = () => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
       {
@@ -79,24 +80,46 @@ export const ValueClient = () => {
 
         <div className="relative">
       <Slider {...settings}>
-        {ClientData.map((testimonail, i) => (
+        {ClientData.map((clientdata, i) => (
           <div key={i} className="w-full overflow-hidden font-Font">
-            <div className="p-5 w-full border-t-8 border-gray60 rounded-md bg-gray10 grid grid-cols-1 md:grid-cols-2 gap-6 font-Font">
-              <div className=' p-5 bg-gray15'>
-                <div className=' flex items-center justify-between '>
-                    <div >
-                        <p  className="mb-10 leading-relaxed font-Font text-base text-gray60 lg:w-4/5 xl:text-lg"> Since 2019</p>
-                        <h2 className=' text-AbsoluteWhite text-xl'>ABC Corporation</h2>
+            <div className="p-5 w-11/12 border-t-8 border-gray60 rounded-md flex flex-row gap-6 font-Font">
+              <div className=' p-5 bg-gray15 rounded-xl w-full'> 
+                <div className=' flex sm:flex-row items-center justify-between w-full mb-5 xs:flex-col xs:items-start ' >
+                    <div className='' >
+                        <p  className="mb-3 leading-relaxed font-Font text-base text-gray60 lg:w-4/5 xl:text-lg"> Since {clientdata.year}</p>
+                        <h2 className=' text-AbsoluteWhite text-xl xs:mb-5'>{clientdata.company_name}</h2>
                     </div>
-                    <div>Visit Website</div>
+                    <div className=' p-3 text-AbsoluteWhite sm:w-4/12 font-Font bg-gray10 rounded-md xs:w-11/12 text-center'>Visit Website</div>
                 </div>
+                <div className=' flex  justify-between items-center mb-6 gap-5'>
+                
+                  <div className=' flex flex-col items-start gap-3 '>
+                    <div className=' flex gap-2 items-center justify-center text-gray60 font-Font'>
+                      <BiCategoryAlt />
+                      <p>Domain</p>
+                    </div>
+                    <p className=' text-AbsoluteWhite text-lg'>Commercial Real Estate</p>
+                  </div>
+                  
+                  <div  className=' flex flex-col items-start gap-3 '>
+                    <div className=' flex gap-2 items-center justify-center text-gray60'>
+                      <AiOutlineThunderbolt />
+                      <p>Category</p>
+                    </div>
+                    <p className=' text-AbsoluteWhite text-lg'>{clientdata.category}</p>
+                  </div>
+                </div>
+                  <div>
+                    <p className=' text-gray60 mb-3 font-Font'>What They Said 🤗</p>
+                    <p className=' text-AbsoluteWhite font-Font'>{clientdata.what_they_say}</p>
+                  </div>
               </div>
             </div>
           </div>
         ))}
       </Slider>
       
-      <div className=' absolute right-12 md:left-0 -bottom-14'>
+      <div className=' absolute right-12 md:left-0 -bottom-14 text-AbsoluteWhite'>
         <p>{value} 0f {ClientData.length}</p>
       </div>
     </div>

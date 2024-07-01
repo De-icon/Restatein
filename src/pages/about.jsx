@@ -11,6 +11,9 @@ import ClientImg from '../assets/img/clientImg.png'
 import commitmentImg from '../assets/img/commitmentImg.png'
 import ExcellentImg from '../assets/img/excellentImg.png'
 import { ValueClient } from '../components/valueClient'
+import {CallToAction} from '../components/callToAction'
+
+
 
 export const About = () => {
   return (
@@ -202,7 +205,7 @@ export const About = () => {
       </div>
 
       <ValueClient />
-      
+      <CallToAction />
     </div>
   )
 }

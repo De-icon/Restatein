@@ -38,7 +38,7 @@ export default {
         gray40: "#666666",
         gray50: "#808080",
         gray60: "#999999",
-
+        gradient: 'linear-gradient(90deg, rgba(38,38,38,1) 0%, rgba(38,38,38,0.5) 100%)'
       },
       fontFamily:{
         Font: ["Urbanist", "sans-serif"]
